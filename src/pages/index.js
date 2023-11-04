@@ -9,6 +9,9 @@ import { LinkArrow } from '@/components/Icons';
 import HireMe from '@/components/HireMe';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import TransitionEffect from '@/components/TransitionEffects';
+import { TypeAnimation } from "react-type-animation";
+import { fadeIn } from '@/variants';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -32,16 +35,33 @@ export default function Home() {
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
-              <h1></h1>
               <AnimatedText
-                text="Turning Vision Into Reality "
-                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+                text="GAËL MUKENDI
+                 KABONGO
+                   "
+                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-4xl dark:text-primaryDark"
               />
+              
+              <div >
+              <span className='text-4xl'>Hi! I'M </span>
+              <TypeAnimation 
+              sequence={[
+                'Full-Stack Developer',
+                2000,
+                'UI/UX Designer',
+                2000,
+                'Digital Marketing',
+                2000,
+              ]}
+              style={{fontSize: '2em'}}
+                className="text-primary dark:text-primaryDark"
+                speed={50}
+                wrapper='span'
+                repeat={Infinity}
+              />
+              </div>
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-  Software developer, web designer, and digital marketing expert. Explore my latest projects  showcasing expertise in Next.js, Nuxt.js, FastAPI, Node.js, C#, JavaScript, React, Quasar, and Vue. Let&apos;s bring your digital ideas to life with creativity and cutting-edge technology.
-</p>
-              </p>
+ Explore my latest projects  showcasing expertise in Developement </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   href="/finalcv.pdf"

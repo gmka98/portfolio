@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from 'react';
 import profilePic from '../../public/images/profile/gaelr.png';
 import Image from 'next/image';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
-import Skills from '@/components/Skills';
+import Skills from '@/components/Skillls';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import TransitionEffect from '@/components/TransitionEffects';
@@ -98,7 +98,6 @@ const about = () => {
               </div>
             </div>
           </div>
-          <Skills />
           <Experience />
           <Education />
         </Layout>
