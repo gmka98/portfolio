@@ -43,7 +43,7 @@ export default function Home() {
               />
               
               <div >
-              <span className='text-4xl'>Hi! I'M </span>
+              <span className='text-4xl'>Hi! I&apos;M </span>
               <TypeAnimation 
               sequence={[
                 'Full-Stack Developer',

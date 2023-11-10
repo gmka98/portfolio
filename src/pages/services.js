@@ -56,7 +56,7 @@ const Services = () =>{
                      className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mb-12 lg:mb-0">
                         <h2 className="h2 text-accent mb-6 text-primary dark:text-primaryDark lg:text-center">What I Do.</h2>
                         <h3 className="h3 max-w-[455px] mb-16 text-black dark:text-white lg:text-center">
-                            I'm a Freelance Full-Stack Developer 
+                            I&apos;m a Freelance Full-Stack Developer 
                         </h3>
                         <Link href="/projects">
                         <motion.button

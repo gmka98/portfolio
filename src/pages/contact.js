@@ -17,7 +17,7 @@ const Contact = () =>{
                      <div>
                         <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide dark:text-white ">Get in Touch</h4>
                         <h2 className="text-[45px] lg:text-[90px] leading-none mb-12 dark:text-primaryDark text-primary  ">
-                            Let's work <br/> together!
+                            Let&apos;s work <br/> together!
                         </h2>
                         </div>
                     </motion.div>

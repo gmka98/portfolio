@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Web = () => {
   return (
@@ -71,12 +72,12 @@ const WebCard = ({ image, date, CardTitle, CardDescription }) => {
             </span>
           )}
           <h3>
-            <a
+            <Link
               href="/#"
               className="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
             >
               {CardTitle}
-            </a>
+            </Link>
           </h3>
           <p className="text-base text-body-color dark:text-dark-6">
             {CardDescription}
