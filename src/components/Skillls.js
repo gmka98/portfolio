@@ -18,7 +18,7 @@ const Skill =  ({name, x, y}) => {
 const Skillls = () => {
     return(
         <>
-            <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32">Skills</h2>
+            <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32 dark:text-white">Skills</h2>
             <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm">
 
                 <motion.div className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2"
@@ -39,7 +39,7 @@ const Skillls = () => {
                 <Skill name="Postgresql" x="15vw" y="-25vw" />
                 <Skill name="MongoDB" x="15vw" y="25vw" />
                 <Skill name="Figma" x="-20vw" y="-25vw" />
-                <Skill name="Kotlin" x="-35vw" y="0vw" />
+                <Skill name="Strapi" x="-35vw" y="0vw" />
                 <Skill name="Express" x="0vw" y="-20vw" />
                 <Skill name="NodeJS" x="35vw" y="0vw" />
                 <Skill name="FastApi" x="0vw" y="20vw" />

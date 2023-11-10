@@ -14,6 +14,7 @@ import TransitionEffect from '@/components/TransitionEffects'
 import { HtmlIcon, CssIcon, JavascriptIcon, NuxtIcon, TailwindcssIcon, DockerIcon, NodejsIcon, PythonIcon, ReactIcon } from "@/components/Icons";
 import ODEAL from '../../public/images/projects/ODEAL.PNG'
 import bounce from '../../public/images/projects/jump.PNG'
+import Demezvous from '../../public/images/projects/demezvous.PNG'
 
 const FramerImage = motion(Image);
 
@@ -114,6 +115,17 @@ const projects = () =>{
                 <AnimatedText text="Where Ideas Build Real!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
             
             <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+                <FeaturedProject
+  title="DemezVous"
+  img={Demezvous}
+  summary="Moving Website"
+  link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
+  github="https://github.com/gmka98/demdem"
+  type="Featured Project"
+/>
+
+                </div>
                 <div className="col-span-12">
                 <FeaturedProject
   title="Ujamaa"
@@ -122,7 +134,6 @@ const projects = () =>{
   link="https://comite-ujamaa.com"
   github="https://github.com/gmka98/Ujamaa"
   type="Featured Project"
-  items={["NuxtJS", "TailwindCSS", "Python"]} // Pass an array of icon names as strings
 />
 
                 </div>
@@ -138,7 +149,6 @@ const projects = () =>{
                     link="https://origin-bcode.netlify.app"
                     github="https://github.com/gmka98/origin"
                     type="Featured Project"
-                    items={["Re", "TailwindCSS", "NodeJS" ]}
                    
                     />
                 </div>
@@ -163,7 +173,6 @@ const projects = () =>{
                     link="/"
                     github="https://github.com/gmka98/ODEAL"
                     type="Featured Project"
-                    items={["Python"]}
                    
                     />
                 </div>
@@ -177,7 +186,6 @@ const projects = () =>{
                     link="https://decktopia.netlify.app"
                     github="https://github.com/gmka98/Decktopia/tree/master"
                     type="Featured Project"
-                    items={["Re", "TailwindCss","NodeJS"]}
                    
                     />
                 </div>

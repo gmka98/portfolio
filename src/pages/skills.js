@@ -2,13 +2,14 @@ import React from "react"
 import AnimatedText from "@/components/AnimatedText"
 import Skillls from "@/components/Skillls"
 import Web from "@/components/Web"
+import Technology from "@/components/Technology"
 
 
 const skills = () => {
     return(
         <>
         <AnimatedText
-        text=""/>
+        text="Full Stack Skills"/>
         <Skillls />
         <div class="fixed">
             <section class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
@@ -29,7 +30,7 @@ const skills = () => {
                 </div>
             </section>
         </div>
-        <Web/>
+        
 
         </>
     )

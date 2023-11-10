@@ -31,7 +31,7 @@ const Contact = () =>{
                 className="flex-1 border rounded-2xl flex flex-col gap-y-6
                 pb-24 p-6 items-start">
                     <input className="bg-transparent border-b py-3 outline-none w-full 
-                    placeholder:text-primary   focus:border-accent transition-all dark:placeholder:text-primaryDark" 
+                    placeholder:text-primary focus:border-accent transition-all dark:placeholder:text-primaryDark" 
                     type="text" 
                     placeholder="Your name"
                     />

@@ -2,33 +2,35 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 import AnimatedText from "@/components/AnimatedText";
+import ServicesSlider from "@/components/ServicesSlider";
+import Link from "next/link";
 
 
 const services = [ 
     {
         name: 'UI/UX Design',
-        description:'lorem ipsum',
+        description:'Design the projects and his structure',
         link: 'learn more',
     
         
     },
     {
         name: 'Developement',
-        description:'lorem ipsum',
+        description:'Web application development and website creation for a seamless digital presence',
         link: 'learn more',
     
         
     },
     {
         name: 'Digital Marketing',
-        description:'lorem ipsum',
+        description:'I enhance online presence through SEO, craft engaging content for social media, execute targeted PPC campaigns, and analyze data for measurable results.',
         link: 'learn more',
     
         
     },
     {
         name: 'Product Branding',
-        description:'lorem ipsum',
+        description:'rategic brand identity and consistent visual storytelling',
         link: 'learn more',
     
         
@@ -54,14 +56,17 @@ const Services = () =>{
                      className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mb-12 lg:mb-0">
                         <h2 className="h2 text-accent mb-6 text-primary dark:text-primaryDark lg:text-center">What I Do.</h2>
                         <h3 className="h3 max-w-[455px] mb-16 text-black dark:text-white lg:text-center">
-                            I'm a Freelance Front-end Developer 
+                            I'm a Freelance Full-Stack Developer 
                         </h3>
+                        <Link href="/projects">
                         <motion.button
                         className="btn btn-lg border-solid border-2 rounded-full p-5 text-white mb-9 items-center"
                         whileHover={{
                         backgroundColor: ["#121212", "rgba(131,58,180,1)", "rgba(253,29,29,1)", "rgba(252,176,69,1)", "rgba(131,58,180,1)", "#121212"],
                         transition: { duration: 1, repeat: Infinity }}} >See my work</motion.button>
+                        </Link>
                     </motion.div>
+                   
                     {/*services*/}
                     <motion.div
                     variants={fadeIn('left', 0.2)}

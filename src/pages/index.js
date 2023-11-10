@@ -39,7 +39,7 @@ export default function Home() {
                 text="GAËL MUKENDI
                  KABONGO
                    "
-                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-4xl dark:text-primaryDark"
+                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-4xl sm:!text-4xl dark:text-primaryDark"
               />
               
               <div >

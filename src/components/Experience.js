@@ -63,7 +63,7 @@ style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-ful
   companyLink="https://www.gmk-404.com/"
   time="07/2023 - 10/2023"
   adress="Brussels, Belgium"
-  work="Professionals Development Series: Platform web to learn skills made by the admin with FastApi, docker, postgresql and Vuejs (Quasar)"
+  work="Build Website, Application for people and company"
 />
 
                 <Details 
