@@ -1,6 +1,5 @@
 import handler from "@/pages/api/hello";
 import React, {useEffect, useState} from "react";
-
 const useThemeSwitcher = () => {
 
     const preferDarkQuery = "(prefer-color-scheme: dark)";

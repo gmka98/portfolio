@@ -70,5 +70,15 @@ module.exports = {
       // => @media (max-width: 479px) { ... }
   },
   },
+  keyframes: {
+    translateLinear: {
+      '0%': { transform: 'translateX(0)' },
+      '100%': { transform: 'translateX(100vw)' }, // Moves beyond the viewport
+    },
+  },
+  animation: {
+    translateLinear: 'translateLinear 10s linear infinite', // 10s duration, infinite loop
+  },
+  
   plugins: [],
 };

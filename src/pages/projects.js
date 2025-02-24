@@ -16,65 +16,69 @@ import ODEAL from '../../public/images/projects/ODEAL.PNG'
 import bounce from '../../public/images/projects/jump.PNG'
 import Demezvous from '../../public/images/projects/demezvous.PNG'
 
+// Icons
+import { SiNuxtdotjs, SiFastapi, SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaNodeJs, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { BiLogoPostgresql } from "react-icons/bi";
+
+// Mapping of technology names to icons
+const iconMapping = {
+  Nuxtjs: <SiNuxtdotjs  className="text-green-300"/>,
+  Nextjs: <TbBrandNextjs className="text-black dark:text-white" />,
+  FastApi: <SiFastapi  className="text-green-400"/>,
+  NodeJS: <FaNodeJs className="text-green-200"/>,
+  PostgreSQL: <BiLogoPostgresql className="text-blue-600"/>,
+  MongoDB: <SiMongodb  className="text-green-500"/>,
+  Html: <FaHtml5  className="text-orange-300"/>,
+  Css: <FaCss3Alt className="text-blue-300"/>,
+  Javascript: <IoLogoJavascript className="text-yellow-300"/>,
+  TailwindCss: <SiTailwindcss className="text-blue-300" />,
+  Express: <SiExpress className="text-black dark;text-white"/>,
+  React: <FaReact className="text-blue-600"/>,
+};
+
+
+
 const FramerImage = motion(Image);
 
 
-
-const iconMapping = {
-    HTML: <HtmlIcon />,
-    CSS: <CssIcon />,
-    JavaScript: <JavascriptIcon />,
-    TailwindCSS: <TailwindcssIcon />,
-    Docker: <DockerIcon />,
-    NuxtJS: <NuxtIcon />,
-    NodeJS: <NodejsIcon />,
-    Python: <PythonIcon/>,
-    Re: <ReactIcon/>
-    // Add more items and their corresponding icons as needed
-  };
-
 const FeaturedProject = ({type,title, summary, img, link, github, items}) => {
 
-    return(
-        <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
-                               <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
+  return(
+      <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border-solid border-dark bg-light shadow-2xl p-12 dark:bg-black dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+                             <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
 
-            <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
-                <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}} transition={{duration:0.2}}  priority 
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
-            </Link>
+          <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
+              <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}} transition={{duration:0.2}}  priority 
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
+          </Link>
 
-            <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 ">
-                <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">{type}</span>
-                <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-                <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">{title}</h2>            
-            </Link>
-            <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
-            <ul className="flex gap-4 w-full h-full">
-        {items &&
-          items.map((item, index) => (
-            <li key={index}>
-              {iconMapping[item] /* Render the icon based on the item name */}
-              {item} {/* Optionally, you can also render the item name */}
-            </li>
-          ))}
-      </ul>
-            <div className="mt-2 flex items-center">
-                <Link href={github} target="_blank" className="w-10"><GithubIcon /></Link>
-                <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:text-dark sm:px-4 sm:text-base">Visit Project</Link>
+          <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 ">
+              <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">{type}</span>
+              <Link href={link} target="_blank" className="hover:underline underline-offset-2">
+              <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">{title}</h2>            
+          </Link>
+          <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
+          
+          <div className="mt-2 flex items-center">
+              <Link href={github} target="_blank" className="w-10"><GithubIcon /></Link>
+              <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:text-white sm:px-4 sm:text-base">Visit Project</Link>
 
-            </div>
+          </div>
 
-            </div>
+          </div>
 
-        </article>
-    )
+      </article>
+  )
 
 }
 
+
 const Project = ({type, title, img, link, github}) =>{
     return(
-        <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4">
+        <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-black dark:border-light xs:p-4">
                                            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br 3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
 
             <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
@@ -117,14 +121,48 @@ const projects = () =>{
             <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
                 <FeaturedProject
-  title="DemezVous"
-  img={Demezvous}
-  summary="Moving Website"
-  link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
-  github="https://github.com/gmka98/demdem"
-  type="Featured Project"
-/>
+                title="Zikagen Agency"
+                img={Demezvous}
+                summary="Modern web platform designed to provide digital marketing services, industry insights through a blog, and an integrated meeting reservation system. It leverages cutting-edge technologies to deliver a seamless experience."
+                link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
+                github="https://github.com/gmka98/demdem"
+                type="Website"
+                items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]} // Must match iconMapping keys
+                 />
+            </div>
+            <div className="col-span-12">
+                <FeaturedProject
+                title="Echanges Services"
+                img={Demezvous}
+                summary="Moving Website"
+                link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
+                github="https://github.com/gmka98/demdem"
+                type="Website"
+                items={["Nextjs", "TailwindCss"]} // Must match iconMapping keys
 
+                 />
+            </div>
+                <div className="col-span-6">
+                <Project
+                    title="Ecommerce Api"
+                    img={ODEAL}
+                    summary="Marktplace App where you can sell and exchange objects."
+                    link="/"
+                    github="https://github.com/gmka98/ODEAL"
+                    type="Backend"
+                    />
+                    
+                </div>
+                <div className="col-span-6">
+                <Project
+                    title="MvcMovie"
+                    img={ODEAL}
+                    summary="Marktplace App where you can sell and exchange objects."
+                    link="/"
+                    github="https://github.com/gmka98/ODEAL"
+                    type="Application"
+                    />
+                    
                 </div>
                 <div className="col-span-12">
                 <FeaturedProject
@@ -137,9 +175,29 @@ const projects = () =>{
 />
 
                 </div>
-                <div className="col-span-12">
-                   
+                <div className="col-span-6">
+                <Project
+                    title="Weather App"
+                    img={ODEAL}
+                    summary="Marktplace App where you can sell and exchange objects."
+                    link="/"
+                    github="https://github.com/gmka98/ODEAL"
+                    type="App"
+                    />
+                    
                 </div>
+                <div className="col-span-6">
+                <Project
+                    title="Whack A Mole"
+                    img={ODEAL}
+                    summary="Marktplace App where you can sell and exchange objects."
+                    link="/"
+                    github="https://github.com/gmka98/ODEAL"
+                    type="Game"
+                    />
+                    
+                </div>
+               
                 <div className="col-span-12">
                     <FeaturedProject
                     
@@ -149,34 +207,36 @@ const projects = () =>{
                     link="https://origin-bcode.netlify.app"
                     github="https://github.com/gmka98/origin"
                     type="Featured Project"
+                    items={["React", "TailwindCss"]} // Must match iconMapping keys
+
                    
                     />
                 </div>
-            
-                
-                
-                
-                <div className="col-span-6 sm:col-span-12">
-                
-                </div>
-                <div className="col-span-6 sm:col-span-12">
-                
-                </div>
-                
-                <div className="col-span-12">
-                <div className="col-span-6 sm:col-span-12">
+                <div className="col-span-6">
                 <Project
+                    title="Lokkerroom"
+                    img={ODEAL}
+                    summary="Marktplace App where you can sell and exchange objects."
+                    link="/"
+                    github="https://github.com/gmka98/ODEAL"
+                    type="Backend"
+                    />
                     
+                </div>
+                <div className="col-span-6">
+                <Project
                     title="ODEAL"
                     img={ODEAL}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
                     github="https://github.com/gmka98/ODEAL"
-                    type="Featured Project"
-                   
+                    type="FGame"
                     />
+                    
                 </div>
-                </div>
+            
+      
+               
                 <div className="col-span-12">
                 <FeaturedProject
                     

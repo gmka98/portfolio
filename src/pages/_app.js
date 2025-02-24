@@ -1,4 +1,6 @@
 import '@/styles/globals.css'; // Import your global CSS if you have any
+import "@/styles/portfolio.scss"
+import "@/styles/projects.css"
 
 import {Montserrat } from 'next/font/google'
 import Head from 'next/head'
