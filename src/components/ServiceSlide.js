@@ -22,7 +22,7 @@ export default function ServiceSlide() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="mx-20 dark:text-white dark:bg-black mb-10"
+            className="mx-20 dark:text-white dark:bg-black mb-10 text-black"
         >
             <motion.h2
             ref={ref}
@@ -51,7 +51,7 @@ export default function ServiceSlide() {
             </div>
 
         </motion.h2>
-        <div className="flex items-center justify-center gap-x-10 mb-4">
+        <div className="flex items-center justify-center gap-x-10 mb-4 ">
             <p className="text-center">
                 Ready to elevate your project? Let&apos;s make it happen today!
             </p>
@@ -81,7 +81,7 @@ export default function ServiceSlide() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
                                 viewport={{ once: true }}
-                                className="flex items-center justify-between hover:bg-primary dark:hover:bg-yellow-400 hover:text-white p-2 py-4 px- group font-medium"
+                                className="flex items-center justify-between hover:bg-primary dark:hover:bg-yellow-400 hover:text-white p-2 py-4 px- group font-medium sm:w-full"
                             >
                                 <span>
                                     <span className="font-bold sm:text-center sm:w-full ">{index + 1}.</span>

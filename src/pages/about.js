@@ -42,7 +42,7 @@ const about = () => {
         <meta name="description" content="My story" />
       </Head>
       <TransitionEffect />
-      <main className="flex w-full flex-col items-center justify-center dark:text-light">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light text-black">
         <Layout className="pt-16">
           <AnimatedText
             text="Passion Fuels Purpose!"

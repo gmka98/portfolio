@@ -7,7 +7,6 @@ import { MdDesignServices } from "react-icons/md";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { TbBrandDeezer } from "react-icons/tb";
 import { BsClipboardData } from "react-icons/bs";
-import { TbCube3dSphere } from "react-icons/tb";
 import { LuRotate3D } from "react-icons/lu";
 
 
@@ -59,8 +58,8 @@ const services = [
 
 export default function Banner() {
     return (
-        <div>
-            <ul className="overflow-hidden relative  flex justify-between gap-4 text-white bg-gray-300 dark:bg-yellow-500 bg-primary font-bold bg-dark-900  border-solid border-gray-900 py-5 px-4 rotate-3 my-10 z-10 sm:my-2">
+        <div className="overflow-hidden sm:overflow-hidden">
+            <ul className="relative  flex justify-between gap-4 text-white bg-gray-300 dark:bg-yellow-500 bg-primary font-bold bg-dark-900  border-solid border-gray-900 py-5 px-4 rotate-3 my-10 z-10 sm:my-2">
             <motion.div
   className="flex gap-40"
   initial={{ x: "0%" }}

@@ -4,17 +4,27 @@ import Layout from "@/components/layout";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import origin from "../../public/images/projects/origin.PNG";
-import decktopia from "../../public/images/projects/decktopia.PNG";
-import ujamaa from "../../public/images/projects/ujamaa.PNG";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TransitionEffect from '@/components/TransitionEffects'
-import { HtmlIcon, CssIcon, JavascriptIcon, NuxtIcon, TailwindcssIcon, DockerIcon, NodejsIcon, PythonIcon, ReactIcon } from "@/components/Icons";
-import ODEAL from '../../public/images/projects/ODEAL.PNG'
-import bounce from '../../public/images/projects/jump.PNG'
+
+
+// Images
+import Lokkerroom from "../../public/images/projects/team.jpg";
+import origin from "../../public/images/projects/origin.PNG";
+import decktopia from "../../public/images/projects/decktopia.PNG";
+import ujamaa from "../../public/images/projects/ujamaa.PNG";
+import Lj from '../../public/images/projects/lj.png'
 import Demezvous from '../../public/images/projects/demezvous.PNG'
+import Weather from '../../public/images/projects/weather.jpg'
+import Bookface from '../../public/images/projects/social.jpg'
+import Mole from '../../public/images/projects/mole.jpg'
+import Movie from '../../public/images/projects/movie.jpg'
+import Commerce from "../../public/images/projects/commerce.jpg";
+import Zikagen from "../../public/images/projects/zikagen.jpg";
+
+
 
 // Icons
 import { SiNuxtdotjs, SiFastapi, SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
@@ -110,26 +120,51 @@ const projects = () =>{
         <>
         <Head>
             <title>GMK | Project Page</title>
-            <meta name="description" content="my description" />
+            <meta name="description" content="Discover my Work" />
         </Head>
         <TransitionEffect />
-
-        <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
-            <Layout className="pt-16">
-                <AnimatedText text="Where Ideas Build Real!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
+        <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light text-black">
+            <Layout className="pt-10">
             
             <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            
+            
             <div className="col-span-12">
                 <FeaturedProject
                 title="Zikagen Agency"
-                img={Demezvous}
+                img={Zikagen}
                 summary="Modern web platform designed to provide digital marketing services, industry insights through a blog, and an integrated meeting reservation system. It leverages cutting-edge technologies to deliver a seamless experience."
-                link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
-                github="https://github.com/gmka98/demdem"
+                link="https://zikagenagency.com/"
+                github="/projects"
                 type="Website"
                 items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]} // Must match iconMapping keys
                  />
             </div>
+
+            <div className="col-span-12">
+                <FeaturedProject
+                title="Lj Hair"
+                img={Lj}
+                summary="Modern web platform designed to provide digital marketing services, industry insights through a blog, and an integrated meeting reservation system. It leverages cutting-edge technologies to deliver a seamless experience."
+                link="https://zikagenagency.com/"
+                github="/projects"
+                type="Website"
+                items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]} // Must match iconMapping keys
+                 />
+            </div>
+
+            <div className="col-span-12">
+                <FeaturedProject
+                title="Pathauto"
+                img={Zikagen}
+                summary="Modern web platform designed to provide digital marketing services, industry insights through a blog, and an integrated meeting reservation system. It leverages cutting-edge technologies to deliver a seamless experience."
+                link="https://zikagenagency.com/"
+                github="/projects"
+                type="Website"
+                items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]} // Must match iconMapping keys
+                 />
+            </div>
+            {/*
             <div className="col-span-12">
                 <FeaturedProject
                 title="Echanges Services"
@@ -141,11 +176,39 @@ const projects = () =>{
                 items={["Nextjs", "TailwindCss"]} // Must match iconMapping keys
 
                  />
+                 
             </div>
+            <div className="col-span-12">
+                <FeaturedProject
+                title="Pathautos"
+                img={Demezvous}
+                summary="Moving Website"
+                link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
+                github="https://github.com/gmka98/demdem"
+                type="Website"
+                items={["Nextjs", "TailwindCss"]} // Must match iconMapping keys
+
+                 />
+                 
+            </div>
+            <div className="col-span-12">
+                <FeaturedProject
+                title="Lj Hair"
+                img={Demezvous}
+                summary="Moving Website"
+                link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
+                github="https://github.com/gmka98/demdem"
+                type="Website"
+                items={["Nextjs", "TailwindCss"]} // Must match iconMapping keys
+
+                 />
+                 
+            </div>
+            */}
                 <div className="col-span-6">
                 <Project
                     title="Ecommerce Api"
-                    img={ODEAL}
+                    img={Commerce}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
                     github="https://github.com/gmka98/ODEAL"
@@ -156,7 +219,7 @@ const projects = () =>{
                 <div className="col-span-6">
                 <Project
                     title="MvcMovie"
-                    img={ODEAL}
+                    img={Movie}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
                     github="https://github.com/gmka98/ODEAL"
@@ -178,7 +241,7 @@ const projects = () =>{
                 <div className="col-span-6">
                 <Project
                     title="Weather App"
-                    img={ODEAL}
+                    img={Weather}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
                     github="https://github.com/gmka98/ODEAL"
@@ -189,7 +252,7 @@ const projects = () =>{
                 <div className="col-span-6">
                 <Project
                     title="Whack A Mole"
-                    img={ODEAL}
+                    img={Mole}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
                     github="https://github.com/gmka98/ODEAL"
@@ -215,7 +278,7 @@ const projects = () =>{
                 <div className="col-span-6">
                 <Project
                     title="Lokkerroom"
-                    img={ODEAL}
+                    img={Lokkerroom}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
                     github="https://github.com/gmka98/ODEAL"
@@ -225,12 +288,12 @@ const projects = () =>{
                 </div>
                 <div className="col-span-6">
                 <Project
-                    title="ODEAL"
-                    img={ODEAL}
+                    title="BookFace"
+                    img={Bookface}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
                     github="https://github.com/gmka98/ODEAL"
-                    type="FGame"
+                    type="Backend"
                     />
                     
                 </div>

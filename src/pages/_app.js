@@ -8,6 +8,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function App({ Component, pageProps }) {
     <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
    <Navbar />
    <AnimatePresence mode="wait">
+   <SpeedInsights />
    <Component key={router.asPath}{...pageProps} />
    </AnimatePresence>
    <Footer />

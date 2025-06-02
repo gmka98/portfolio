@@ -11,6 +11,8 @@
   "dependencies": {
     "@react-three/drei": "^9.120.5",
     "@react-three/fiber": "^8.17.10",
+    "@vercel/speed-insights": "^1.2.0",
+    "caniuse-lite": "^1.0.30001700",
     "framer-motion": "^10.16.4",
     "keen-slider": "^6.8.6",
     "next": "13.5.6",

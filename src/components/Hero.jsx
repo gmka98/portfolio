@@ -21,7 +21,7 @@ import { CiMail } from "react-icons/ci";
 
 export default function HeroSection() {
   return (
-    <section className="dark:bg-black dark:text-white px-6 mx-10">
+    <section className="dark:bg-black dark:text-white px-6 mx-10 text-black">
       <div className="container mx-auto ">
         <h1 className="text-center text-2xl">
           Gael Mukendi Kabongo

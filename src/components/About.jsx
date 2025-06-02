@@ -65,7 +65,7 @@ const services = [
 export default function IndexService() {
   return (
     <div>
-<div className="grid grid-cols-3 sm:grid-cols-1 gap-4 justify-center mx-20 sm:mx-20 dark:text-white items-center">
+<div className="grid grid-cols-3 sm:grid-cols-1 gap-4 justify-center mx-20 sm:mx-20 dark:text-white items-center text-black">
 {/* Left */}
                 <div className="space-y-80 sm:space-y-2 ">
                     <div className="">

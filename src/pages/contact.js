@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import TransitionEffect from '@/components/TransitionEffects'
+import Head from 'next/head';
 
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -17,7 +19,13 @@ const Contact = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <section className="dark:text-white mb-10" id="contact">
+    <>
+    <Head>
+      <title>GMK | Contact Page</title>
+      <meta name="Contact" content="Contact US" />
+    </Head>
+<TransitionEffect/>
+    <section className="dark:text-white mb-10 text-black" id="contact">
       <div className="mx-20">
         <motion.div ref={ref} variants={variants} initial="initial" animate="animate" className="grid grid-cols-2 lg:grid-cols-1 justify-between">
           <motion.div>
@@ -119,6 +127,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </section>
+    </>
   );
 };
 
