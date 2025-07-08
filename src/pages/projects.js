@@ -141,29 +141,9 @@ const projects = () =>{
                  />
             </div>
 
-            <div className="col-span-12">
-                <FeaturedProject
-                title="Lj Hair"
-                img={Lj}
-                summary="Modern web platform designed to provide digital marketing services, industry insights through a blog, and an integrated meeting reservation system. It leverages cutting-edge technologies to deliver a seamless experience."
-                link="https://zikagenagency.com/"
-                github="/projects"
-                type="Website"
-                items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]} // Must match iconMapping keys
-                 />
-            </div>
+           
 
-            <div className="col-span-12">
-                <FeaturedProject
-                title="Pathauto"
-                img={Zikagen}
-                summary="Modern web platform designed to provide digital marketing services, industry insights through a blog, and an integrated meeting reservation system. It leverages cutting-edge technologies to deliver a seamless experience."
-                link="https://zikagenagency.com/"
-                github="/projects"
-                type="Website"
-                items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]} // Must match iconMapping keys
-                 />
-            </div>
+           
             {/*
             <div className="col-span-12">
                 <FeaturedProject
@@ -211,7 +191,7 @@ const projects = () =>{
                     img={Commerce}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
-                    github="https://github.com/gmka98/ODEAL"
+                    github="https://github.com/gmka98/e_commerce_api"
                     type="Backend"
                     />
                     
@@ -227,24 +207,14 @@ const projects = () =>{
                     />
                     
                 </div>
-                <div className="col-span-12">
-                <FeaturedProject
-  title="Ujamaa"
-  img={ujamaa}
-  summary="Visualize ancestry. Preserve family legacy. Discover roots. Uncover connections."
-  link="https://comite-ujamaa.com"
-  github="https://github.com/gmka98/Ujamaa"
-  type="Featured Project"
-/>
-
-                </div>
+               
                 <div className="col-span-6">
                 <Project
                     title="Weather App"
                     img={Weather}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
-                    github="https://github.com/gmka98/ODEAL"
+                    github="https://github.com/gmka98/Weather-App"
                     type="App"
                     />
                     
@@ -255,7 +225,7 @@ const projects = () =>{
                     img={Mole}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
-                    github="https://github.com/gmka98/ODEAL"
+                    github="https://github.com/gmka98/Whack-A-Mole"
                     type="Game"
                     />
                     
@@ -281,7 +251,7 @@ const projects = () =>{
                     img={Lokkerroom}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
-                    github="https://github.com/gmka98/ODEAL"
+                    github="https://github.com/gmka98/lokkeroom"
                     type="Backend"
                     />
                     
@@ -292,7 +262,7 @@ const projects = () =>{
                     img={Bookface}
                     summary="Marktplace App where you can sell and exchange objects."
                     link="/"
-                    github="https://github.com/gmka98/ODEAL"
+                    github="https://github.com/gmka98/BookFace"
                     type="Backend"
                     />
                     
@@ -300,18 +270,7 @@ const projects = () =>{
             
       
                
-                <div className="col-span-12">
-                <FeaturedProject
-                    
-                    title="Decktopia"
-                    img={decktopia}
-                    summary="card marketplace."
-                    link="https://decktopia.netlify.app"
-                    github="https://github.com/gmka98/Decktopia/tree/master"
-                    type="Featured Project"
-                   
-                    />
-                </div>
+              
 
 
             </div>

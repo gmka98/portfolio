@@ -56,40 +56,45 @@ const Experience = () => {
 <motion.div
 style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]" />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-               
-                <Details 
-  position="Software developer"
-  company="Freelance"
-  companyLink="https://www.gmk-404.com/"
-  time="07/2023 - 10/2023"
-  adress="Brussels, Belgium"
-  work="Build Website, Application for people and company"
+               <Details
+  position="Junior Data Analyst"
+  company="Van Moer Logistics"
+  companyLink="https://www.vanmoer.com/"
+  time="Sep 2024 - May 2025"
+  address="Ghent, Belgium · Hybrid"
+  work="Developed Power BI dashboards and Excel reports to visualize logistics KPIs, optimize delivery performance, and support data-driven decisions across the supply chain."
 />
 
-                <Details 
-  position="Software developer intership"
+<Details
+  position=".NET Software Developer (Freelance)"
+  company="GMK-404"
+  companyLink="https://www.gmk-404.com/"
+  time="Jul 2023 - Oct 2023"
+  address="Brussels, Belgium"
+  work="Created customized websites and software solutions for individuals and small businesses using .NET, JavaScript, and modern front-end frameworks. Focused on responsive design, usability, and performance."
+/>
+
+<Details
+  position="Full-Stack Developer & Data Analyst Intern"
   company="Adimian"
   companyLink="https://www.adimian.com/"
-  time="04/2023 - 05/2023"
-  adress="Brussels, Belgium"
-  work="Professionals Development Series: Platform web to learn skills made by the admin with FastApi, docker, postgresql and Vuejs (Quasar)"
+  time="Apr 2023 - May 2023"
+  address="Brussels, Belgium"
+  work="Built a web-based skills platform using FastAPI (Python), PostgreSQL, Docker, and Vue.js (Quasar). Designed and implemented interactive dashboards to track internal competencies and user progress."
 />
 
-                    <Details 
-                    position="Full-stack developer" company="BeCode"
-                    companyLink="https://becode.org/"
-                    time="04/2023 - 05/2023"
-                    adress="Brussels, Belgium"
-                    work="Becode is an IT start-up which provides IT
-                    bootcamps based on active pedagogy:
-                    Example of projects :
-                    •ORIGIN: Team Project with REACT, Nodejs ,
-                    APIs, database (postgresql ), and
-                    deployment with Free Hosting platforms
-                    Heroku
-                    •DECKTOPIA: Application of cards with
-                    reactjs, nodejs,docker, postgresql and
-                    heroku." />
+<Details
+  position="Full-Stack Developer Trainee"
+  company="BeCode"
+  companyLink="https://becode.org/"
+  time="Jan 2023 - Apr 2023"
+  address="Brussels, Belgium"
+  work="Participated in a full-time coding bootcamp focused on full-stack development. Built and deployed multiple web apps:
+  - ORIGIN: Social app using React, Node.js, PostgreSQL, REST APIs.
+  - DECKTOPIA: Card game built with React, Node.js, PostgreSQL, Docker.
+  Gained strong skills in Git, Agile teamwork, and project delivery."
+/>
+
 
                     <Details 
                     position="Inventory Manager" company="Bleckmann"

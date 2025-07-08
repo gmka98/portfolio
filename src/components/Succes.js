@@ -29,7 +29,7 @@ const AnimatedNumbers = ({ value }) => {
   
   export default function Succes(){
     return(
-        <div className="col-span-2 flex justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 mx-20 px-10 py-6 border text-black dark:text-white my-10 sm:items-center sm:gap-4 sm:mx-auto">
+        <div className="col-span-2 flex justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 mx-20 px-10 py-6 border shadow-xl shadow-black dark:shadow-white text-black dark:text-white my-10 sm:items-center sm:gap-4 sm:mx-auto">
         <div className="flex flex-col items-center justify-center  ">
           <span className="inline-block text-7xl  font-bold md:text-6xl sm:text-4xl xs:text-4xl">
             +
@@ -41,7 +41,7 @@ const AnimatedNumbers = ({ value }) => {
         <div className="flex flex-col items-center justify-center xl:items-center">
           <span className="inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text-4xl">
             +
-            <AnimatedNumbers value={40} />
+            <AnimatedNumbers value={45} />
           </span>
           <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-sm ">+ Repository build</h2>
         </div>
