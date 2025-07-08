@@ -17,7 +17,7 @@ const Footer = () => {
     };
     return (
         <footer className="bg-black text-white w-full  border-solid border-dark font-medium text-lg   sm:text-base ">
-            <div className="ml-60 mb-4 sm:ml-20">
+            <div className="ml-60 mb-4 sm:ml-20 justify)-center items-center flex flex-col">
             <ul className="uppercase flex space-x-80 sm:space-x-16">
                 {["dribbble", "linkedin", "behance"].map((item, index) => (
                     <li key={index} className="bg-gradient-to-r from-gray-900 via-white bg-clip-text text-transparent hover:text-white">

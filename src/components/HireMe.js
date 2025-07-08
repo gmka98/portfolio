@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HireMe = () => {
     return (
-        <div className="absolute right-4 bottom-4 flex items-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0">
+        <div className="absolute right-24 bottom-60 flex items-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0  lg:top-0 lg:bottom-auto lg:left-auto lg:absolute">
                 <div className="w-48 h-auto items-center justify-center relative md:w-24">
                  <CircularText className={"fill-dark animate-spin-slow dark:fill-light"} />
                 

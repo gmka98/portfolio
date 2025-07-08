@@ -76,7 +76,7 @@ style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-ful
 />
 
                     <Details 
-                    position="Full-stack developer trainee" company="BeCode"
+                    position="Full-stack developer" company="BeCode"
                     companyLink="https://becode.org/"
                     time="04/2023 - 05/2023"
                     adress="Brussels, Belgium"

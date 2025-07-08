@@ -52,7 +52,7 @@ export default function HeroSection() {
                 Turning <span className="text-primary dark:text-yellow-400">ideas</span>  into innovative <span className="text-primary dark:text-yellow-400">digital solutions</span> 
                 </p>
             </div>
-            <div className="flex items-center self-start mt-2 lg:justify-center lg:self-center">
+            <div className="flex justify-center items-center self-start mt-2 lg:justify-center lg:self-center">
                 <Link
                   href="/finalcv.pdf"
                   target="_blank"

@@ -32,14 +32,14 @@ const Skillls = () => {
                 <Skill name="JavaScript" x="15vw" y="0vw" />
                 <Skill name="Python" x="0vw" y="10vw" />
                 <Skill name="Aws" x="-20vw" y="10vw" />
-                <Skill name="Netlify" x="-20vw" y="-10vw" />
+                <Skill name="C#" x="-20vw" y="-10vw" />
                 <Skill name="Vue" x="20vw" y="10vw" />
                 <Skill name="Web Design" x="20vw" y="-10vw" />
                 <Skill name="React" x="-15vw" y="25vw" />
                 <Skill name="Postgresql" x="15vw" y="-25vw" />
                 <Skill name="MongoDB" x="15vw" y="25vw" />
                 <Skill name="Figma" x="-20vw" y="-25vw" />
-                <Skill name="Strapi" x="-35vw" y="0vw" />
+                <Skill name=".NET" x="-35vw" y="0vw" />
                 <Skill name="Express" x="0vw" y="-20vw" />
                 <Skill name="NodeJS" x="35vw" y="0vw" />
                 <Skill name="FastApi" x="0vw" y="20vw" />
