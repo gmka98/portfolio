@@ -41,7 +41,7 @@ const Footer = () => {
             <p className="bg-gradient-to-r from-gray-900 via-white bg-clip-text text-transparent text-center text-9xl uppercase font-bold mt-4  sm:text-7xl">Let&apos;s Talk</p>
             <div className="mx-20 mt-4 ">
             <ul className="uppercase flex justify-center space-x-4 text-2xl sm:text-sm sm:space-x-2">
-                    {["Home", "About", "Services", "Projects", "Articles"].map((item, index) => (
+                    {["Home", "About", "Services", "Projects"].map((item, index) => (
                         <motion.li
                             key={index}
                             variants={listItemAnimation}

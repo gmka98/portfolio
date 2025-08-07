@@ -75,7 +75,7 @@ export default function IndexService() {
                     <div className="flex  items-center hover:gap-x-2">
                         <p className="text-5xl text-left sm:text-center sm:text-3xl sm:ml-24">About</p>
                         <Link href={"/about"}>
-                        <BsArrowRightCircle  className="dark:text-white text-6xl sm:h-10 sm:rotate-90 animate-bounce"/>
+                        <BsArrowRightCircle  className="dark:text-white text-6xl sm:h-10  sm:rotate-90 animate-bounce"/>
                         </Link>
                     </div>
                 </div>

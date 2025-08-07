@@ -48,9 +48,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github, items }) => 
 
 const Project = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="flex flex-col  ">
+    <article className="flex flex-col  border border-gray-600 border-4 dark:border-yellow-600 rounded-md p-2 ">
       <Link href={link} target="_blank" aria-label={title}>
-        <Image alt={title} className="object-cover w-full h-52 border-4 border-gray-600 rounded-md" src={img} />
+        <Image alt={title} className="object-cover w-full h-52 border-4 border-gray-600 rounded-md dark:border-yellow-600" src={img} />
       </Link>
       <div className="flex flex-col flex-1 p-6">
         <span className="text-primary font-medium text-xl dark:text-primaryDark">{type}</span>
@@ -66,7 +66,7 @@ const Project = ({ type, title, summary, img, link, github }) => {
 
 export default function Projects() {
   return (
-    <section className="dark:text-white dark:bg-black mt-20 mb-10 mx-20 text-black">
+    <section className="dark:text-white dark:bg-black pt-20 pb-20 mx-20 text-black">
       <h2 className="text-center text-7xl mb-10">Featured Projects</h2>
       <ul>
         <li></li>

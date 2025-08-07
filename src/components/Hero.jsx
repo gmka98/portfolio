@@ -14,7 +14,11 @@ import { TypeAnimation } from "react-type-animation";
 import Python from "@/assets/python.png";
 import Javascript from "@/assets/javascript.png";
 import Csharp from "@/assets/C_-.png";
-import profilePic from '../../public/images/profile/ai-gmk.png';
+import Powerbi from "@/assets/powerbi.png";
+import Sql from "@/assets/sql.svg";
+import Vba from "@/assets/vba.png";
+
+import profilePic from '/public/images/profile/ai-gmk.png';
 
 import { CiMail } from "react-icons/ci";
 
@@ -40,10 +44,14 @@ export default function HeroSection() {
           Gael Mukendi Kabongo
         </h1>
         <div className="text-center">
-            <span className="sm:text-sm text-3xl mr-4">Hi IM</span>
+            <span className="sm:text-2xl text-3xl mr-4">Hi I&aposM</span>
               <TypeAnimation 
               sequence={[
                 'Software Developer',
+                2000,
+                'Data Analyst',
+                2000,
+                'Business Intelligence',
                 2000,
                 'UI/UX Designer',
                 2000,
@@ -99,32 +107,57 @@ export default function HeroSection() {
           </div>
 
           {/* Texte de droite */}
-          <div className="space-y-6 mr-4 w-full mt-20 sm:mt-2">
-            <h2 className="text-3xl sm:text-md font-semibold text-center">🛠️ <span className="text-primary dark:text-yellow-300">Expertise</span> Technique</h2>
+          <div className="space-y-6 mr-4 w-full mt-20 sm:mt-2 items-center">
+            <h2 className="text-4xl sm:text-md font-semibold text-center ">🛠️ <span className="text-primary dark:text-yellow-300">Expertise</span> Technique</h2>
            
-            <div className="text-white mt-10">
-                  <ul className="flex justify-between sm:shrink-0">
+            <div className="text-white mt-6 ">
+                  <ul className="grid grid-cols-3 items-center place-content-center place-items-center  sm:shrink-0">
                     <li>
                         <Image
                         src={Python}
-                        width={80}
+                        width={70}
                         height={100}
                         alt=""/>
                     </li>
+                    
                     <li>
                     <Image
                         src={Javascript}
-                        width={80}
+                        width={70}
                         height={100}
                         alt=""/>
                     </li>
                     <li>
+                   
                     <Image
                         src={Csharp}
-                        width={80}
+                        width={70}
                         height={100}
                         alt=""/>
                     </li>
+                    <li>
+                        <Image
+                        src={Sql}
+                        width={70}
+                        height={100}
+                        alt=""/>
+                    </li>
+                    <li>
+                        <Image
+                        src={Powerbi}
+                        width={70}
+                        height={100}
+                        alt=""/>
+                    </li>
+                    <li>
+                        <Image
+                        src={Vba}
+                        width={100}
+                        height={100}
+                        alt=""/>
+                    </li>
+                    
+                    
                 </ul>
             </div>
           </div>

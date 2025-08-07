@@ -45,26 +45,25 @@ const about = () => {
       <main className="flex w-full flex-col items-center justify-center dark:text-light text-black">
         <Layout className="pt-16">
           <AnimatedText
-            text="Passion Fuels Purpose!"
-            className="mb-16 lg:!text-7xl sm:!text-4xl sm:text-nowrap xs:!text-4xl sm:mb-8"
+            text="Never Stop to learn !"
+            className="mb-16 xl:!text-xs lg:!text-5xl sm:!text-4xl sm:text-nowrap xs:!text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
-              <p className="font-medium">
-                Hi, I&apos;m Mukendi Kabongo Gael, a Junior Web Developer Full Stack, Digital Marketer and UI/UX designer. I have a passion for creating beautiful, functional,
-                and user-centered digital experiences. After learning on my own and gaining experience in Becode(start-up) and finish with succes my intership in Adimian. I am always looking for
-                new and innovative ways to bring my clients&apos; visions to life.
-              </p>
-              <p className="my-4 font-medium">
-                I believe that design is about more than just making things look pretty – it&apos;s about solving problems and
-                creating intuitive, enjoyable experiences for users.
-              </p>
-              <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or
-                other digital product, I can build the projects of your dream from scratch, A to Z. I look forward to the opportunity to bring my skills and passion to your next project
-              </p>
-            </div>
+           <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
+    <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
+    <p className="font-medium">
+      I&apos;m a self-taught tech and data enthusiast who thrives on learning by building. My journey blends full-stack development with data analytics and business intelligence — allowing me to create smart, data-driven solutions from backend to dashboard.
+    </p>
+    <p className="my-4 font-medium">
+      I specialize in backend development, clean and functional UI/UX design, and advanced data analysis using tools like Python, SQL, Power BI, and C#. I&aposve built interactive dashboards, automated reporting systems, and web applications that solve real-world problems.
+    </p>
+    <p className="my-4 font-medium">
+      Currently, I&apos;m expanding my skills in data science — diving into machine learning, predictive modeling, and statistical analysis — to go beyond insights and into foresight. My work is driven by a passion for continuous learning and a mindset focused on impact.
+    </p>
+    <p className="font-medium">
+      What sets me apart is my adaptability. I&apos;m comfortable wearing multiple hats: switching between logic, design, and analysis — whether I&apos;m coding a backend API, cleaning a messy dataset, or building a user-centric interface. Tech is always evolving — and so am I.
+    </p>
+  </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light"></div>
               <Image
@@ -78,21 +77,21 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={4} />
+                  <AnimatedNumbers value={7} />
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">+ Programming Language</h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={45} />
+                  <AnimatedNumbers value={50} />
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">+ Repository build</h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={2} />
+                  <AnimatedNumbers value={5} />
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">+ years of experience</h2>
               </div>

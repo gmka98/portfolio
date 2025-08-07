@@ -22,8 +22,16 @@ import Bookface from '../../public/images/projects/social.jpg'
 import Mole from '../../public/images/projects/mole.jpg'
 import Movie from '../../public/images/projects/movie.jpg'
 import Commerce from "../../public/images/projects/commerce.jpg";
-import Zikagen from "../../public/images/projects/zikagen.jpg";
-
+import Kazimmo from "@/assets/projects/kazimmo.png";
+import Zikagen from "@/assets/projects/zikagen.png";
+import Telecom from "@/assets/projects/telecom.jpg";
+import Competitor from "@/assets/projects/competitor.jpg";
+import Investing from "@/assets/projects/investing-movie.jpg";
+import Trend from "@/assets/projects/trend.jpg";
+import Trading from "@/assets/projects/trading.jpg";
+import Nobel from "@/assets/projects/nobel-prize.jpg";
+import LA from "@/assets/projects/los_angeles.jpg";
+import Phone from "@/assets/projects/phone.jpg";
 
 
 // Icons
@@ -92,7 +100,7 @@ const Project = ({type, title, img, link, github}) =>{
                                            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br 3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
 
             <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
-                <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}} transition={{duration:0.2}} />
+                <FramerImage src={img} alt={title} className="w-full h-auto " whileHover={{scale:1.05}} transition={{duration:0.2}} />
             </Link>
 
             <div className="w-full flex flex-col items-start justify-between mt-4 ">
@@ -125,67 +133,124 @@ const projects = () =>{
         <TransitionEffect />
         <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light text-black">
             <Layout className="pt-10">
-            
+             <div class="flex items-center justify-center ">
+           
+        </div>
             <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            
-            
-            <div className="col-span-12">
-                <FeaturedProject
-                title="Zikagen Agency"
-                img={Zikagen}
-                summary="Modern web platform designed to provide digital marketing services, industry insights through a blog, and an integrated meeting reservation system. It leverages cutting-edge technologies to deliver a seamless experience."
-                link="https://zikagenagency.com/"
-                github="/projects"
-                type="Website"
-                items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]} // Must match iconMapping keys
-                 />
-            </div>
+  <div className="col-span-12">
+  <FeaturedProject
+    title="Exploring Stock Market Trends"
+    img={Trend}
+    summary="An in-depth analysis of stock market behavior using Python and visualization tools. This project provides clear trend identification and supports investment decision-making through data insights."
+    link="https://github.com/gmka98/Exploring-Stock-Market-Trends"
+    github="https://github.com/gmka98/Exploring-Stock-Market-Trends"
+    type="Data Analysis"
+    items={["Python", "Pandas", "Matplotlib", "Seaborn"]}
+  />
+</div>
 
-           
+<div className="lg:col-span-12 col-span-6">
+  <Project
+    title="Power BI Case Study – Mortgage Trading Analysis"
+    img={Trading}
+    summary="A detailed Power BI dashboard that provides key performance insights into mortgage trading data. It helps stakeholders understand profitability, risk, and portfolio performance at a glance."
+    link="https://github.com/gmka98/Mortgage-Trading-Analysis-PowerBi"
+    github="https://github.com/gmka98/Mortgage-Trading-Analysis-PowerBi"
+    type="Data Analysis"
+  />
+</div>
 
-           
-            {/*
-            <div className="col-span-12">
-                <FeaturedProject
-                title="Echanges Services"
-                img={Demezvous}
-                summary="Moving Website"
-                link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
-                github="https://github.com/gmka98/demdem"
-                type="Website"
-                items={["Nextjs", "TailwindCss"]} // Must match iconMapping keys
+<div className="lg:col-span-12 col-span-6">
+  <Project
+    title="Telecom Company – Customer Churn Prediction"
+    img={Phone}
+    summary="A predictive model that analyzes customer data to identify churn patterns. This project helps telecom businesses reduce churn rates and improve retention strategies."
+    link="https://github.com/gmka98/Customer-Churn-Prediction"
+    github="https://github.com/gmka98/Customer-Churn-Prediction"
+    type="Data Analysis"
+  />
+</div>
 
-                 />
-                 
-            </div>
-            <div className="col-span-12">
-                <FeaturedProject
-                title="Pathautos"
-                img={Demezvous}
-                summary="Moving Website"
-                link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
-                github="https://github.com/gmka98/demdem"
-                type="Website"
-                items={["Nextjs", "TailwindCss"]} // Must match iconMapping keys
+<div className="col-span-12">
+  <FeaturedProject
+    title="Power BI Case Study – Customer Churn Analysis"
+    img={Telecom}
+    summary="Interactive Power BI dashboards analyzing customer behavior to reveal why clients leave. The results help improve decision-making and customer satisfaction in competitive markets."
+    link="https://github.com/gmka98/Customer-Churn-Analysis-PowerBI"
+    github="https://github.com/gmka98/Customer-Churn-Analysis-PowerBI"
+    type="Data Analysis"
+    items={["Power BI", "DAX", "Data Cleaning"]}
+  />
+</div>
 
-                 />
-                 
-            </div>
-            <div className="col-span-12">
-                <FeaturedProject
-                title="Lj Hair"
-                img={Demezvous}
-                summary="Moving Website"
-                link="demdem-3yoksqb7l-gmka98s-projects.vercel.app"
-                github="https://github.com/gmka98/demdem"
-                type="Website"
-                items={["Nextjs", "TailwindCss"]} // Must match iconMapping keys
+<div className="lg:col-span-12 col-span-6">
+  <Project
+    title="Nobel Prize Data Analysis"
+    img={Nobel}
+    summary="A historical data exploration project that visualizes trends in Nobel Prize distributions across categories, countries, and gender, offering unique insights into global academic recognition."
+    link="https://github.com/gmka98/Visualizing-the-Hystory-of-Nobel-Prize-Winners"
+    github="https://github.com/gmka98/Visualizing-the-Hystory-of-Nobel-Prize-Winners"
+    type="Data Analysis"
+  />
+</div>
 
-                 />
-                 
-            </div>
-            */}
-                <div className="col-span-6">
+<div className="lg:col-span-12 col-span-6">
+  <Project
+    title="LAPD Crime Data Analysis"
+    img={LA}
+    summary="A comprehensive crime data analysis project for the city of Los Angeles. It reveals crime hotspots and time-based trends to assist in public safety planning and urban policy."
+    link="https://github.com/gmka98/Analyzing-Crime-in-Los-Angeles"
+    github="https://github.com/gmka98/Analyzing-Crime-in-Los-Angeles"
+    type="Data Analysis"
+  />
+</div>
+
+<div className="col-span-12">
+  <FeaturedProject
+    title="Kazimmo"
+    img={Kazimmo}
+    summary="A professional real estate website built for Kazimmo agency. It enhances the company’s image, increases credibility, and has attracted many client visits since launch, boosting both leads and visibility."
+    link="https://kazimmo.vercel.app"
+    github="/projects"
+    type="Website"
+    items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]}
+  />
+</div>
+
+<div className="lg:col-span-12 col-span-6">
+  <Project
+    title="Power BI Case Study – Competitor Sales & Market Share Analysis"
+    img={Competitor}
+    summary="An advanced Power BI dashboard comparing competitor sales and market share. It enables strategic positioning by providing a clear understanding of industry trends and rivals’ performance."
+    link="/"
+    github="https://github.com/gmka98/Competitor-Sales-Analysis-PowerBi"
+    type="Data Analysis"
+  />
+</div>
+
+<div className="lg:col-span-12 col-span-6">
+  <Project
+    title="Investing-Netflix-Movie"
+    img={Investing}
+    summary="Data storytelling project combining Netflix movie popularity with investment perspectives. Provides unique visuals and findings on audience trends and platform content strategy."
+    link="/"
+    github="https://github.com/gmka98/Investing-Netflix-Movie"
+    type="Data Analysis"
+  />
+</div>
+
+<div className="col-span-12">
+  <FeaturedProject
+    title="Zikagen Agency"
+    img={Zikagen}
+    summary="A digital agency website designed to offer marketing services, blog articles, and meeting booking. The modern UI and backend system deliver a seamless, trustworthy experience that converts visitors into leads."
+    link="https://zikagenagency.com/"
+    github="/projects"
+    type="Website"
+    items={["Nuxtjs", "TailwindCss", "FastApi", "PostgreSQL"]}
+  />
+</div>
+                <div className="lg:col-span-12 col-span-6">
                 <Project
                     title="Ecommerce Api"
                     img={Commerce}
@@ -196,7 +261,7 @@ const projects = () =>{
                     />
                     
                 </div>
-                <div className="col-span-6">
+                <div className="lg:col-span-12 col-span-6">
                 <Project
                     title="MvcMovie"
                     img={Movie}
@@ -208,7 +273,7 @@ const projects = () =>{
                     
                 </div>
                
-                <div className="col-span-6">
+                <div className="lg:col-span-12 col-span-6">
                 <Project
                     title="Weather App"
                     img={Weather}
@@ -219,7 +284,7 @@ const projects = () =>{
                     />
                     
                 </div>
-                <div className="col-span-6">
+                <div className="lg:col-span-12 col-span-6">
                 <Project
                     title="Whack A Mole"
                     img={Mole}
@@ -245,7 +310,7 @@ const projects = () =>{
                    
                     />
                 </div>
-                <div className="col-span-6">
+                <div className="lg:col-span-12 col-span-6">
                 <Project
                     title="Lokkerroom"
                     img={Lokkerroom}
@@ -256,7 +321,7 @@ const projects = () =>{
                     />
                     
                 </div>
-                <div className="col-span-6">
+                <div className="lg:col-span-12 col-span-6">
                 <Project
                     title="BookFace"
                     img={Bookface}

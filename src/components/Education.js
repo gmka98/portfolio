@@ -33,52 +33,55 @@ const Education = () => {
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]" />
       <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-
+<Details
+    type="Associate Data Science Python - DataCamp"
+    place="Remote"
+    info="Gained hands-on experience with data manipulation, visualization, and machine learning using Python. Covered tools like Pandas, NumPy, Scikit-learn, and Matplotlib.."
+  />
+  <Details
+    type="PowerBI – Microsoft"
+    place="edX (Online)"
+    info="Learned to create dynamic, interactive dashboards and data-driven reports.
+Applied DAX and Power Query for advanced analytics and data modeling."
+  />
   <Details
     type="Software Development Basics – IBM Skills Network"
-    time="2023 – Present"
     place="edX (Online)"
     info="Learning software development fundamentals including programming logic, database basics, and project workflows through IBM's official training on edX."
   />
 
   <Details
     type="AWS Certified Cloud Practitioner – Training"
-    time="2023 – Present"
     place="Online"
     info="Ongoing preparation for AWS Cloud Practitioner certification. Covers foundational knowledge in cloud architecture, AWS core services, pricing, and security."
   />
 
   <Details
     type="Google Analytics 4 – Certification"
-    time="2023 – Completed July"
     place="Google Digital Garage (Online)"
     info="Completed Google Analytics 4 course with emphasis on event tracking, report building, audience analysis, and digital marketing data interpretation."
   />
 
   <Details
     type="Digital Marketing Fundamentals"
-    time="2023"
     place="Atelier Numérique – Google (Online)"
     info="Completed Google’s Digital Marketing course, covering SEO, SEM, email marketing, analytics, and digital strategy foundations."
   />
 
   <Details
     type="Scientific Computing with Python – Certification"
-    time="2023"
     place="freeCodeCamp (Online)"
     info="Mastered Python fundamentals, object-oriented programming, data structures, APIs, SQL, and data visualization tools within scientific computing context."
   />
 
   <Details
     type="Coding Fundamentals – Self-Taught"
-    time="2020 – 2022"
     place="SoloLearn (Online)"
     info="Learned programming concepts, algorithms, and web development foundations through independent study and interactive coding platforms."
   />
 
   <Details
     type="Secondary Education – Economic Sciences"
-    time="2010 – 2016"
     place="IMMI, Belgium"
     info="Studied a combination of scientific and economic subjects. Gained strong analytical thinking before transitioning into IT and self-study."
   />
